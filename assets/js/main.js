@@ -118,3 +118,13 @@
 
 
 
+const learn = document.querySelector('#learn')
+const textos = Array.from(document.querySelectorAll('.learn-more'))
+
+
+
+learn.addEventListener('click', () => {
+	textos.map(indice => {
+		indice.style.display = 'block'
+	})
+})

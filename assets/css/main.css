@@ -3220,6 +3220,13 @@ input, select, textarea {
 
 	}
 
-	.copyright{
+	.copyright {
 		display: none;
+	}
+
+	ul.labeled-icons {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
 	}
