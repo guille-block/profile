@@ -121,10 +121,24 @@
 const learn = document.querySelector('#learn')
 const textos = Array.from(document.querySelectorAll('.learn-more'))
 
+let estado = false 
 
 
 learn.addEventListener('click', () => {
+	if(!estado) {
 	textos.map(indice => {
 		indice.style.display = 'block'
 	})
+
+	estado = true
+
+	learn.innerText = 'Hide'
+	} else if(estado){
+		textos.map(indice => {
+			indice.style.display = 'none'
+		})
+		estado = false
+
+		learn.innerText = 'Learn more'
+	}
 })
